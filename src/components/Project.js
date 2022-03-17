@@ -1,6 +1,8 @@
 import React from "react";
+import LanguageIcon from "@mui/icons-material/Language";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
-function Project({ name, description, technologies }) {
+function Project({ name, description, technologies, linkSite, linkGithub }) {
   return (
     <div className="project__item">
       <img src="logo512.png" />
@@ -13,6 +15,14 @@ function Project({ name, description, technologies }) {
           {technologies.map((technology) => {
             return <p>{technology}</p>;
           })}
+        </div>
+        <div className="links">
+          <a target="_blank" href={linkSite}>
+            <LanguageIcon />
+          </a>
+          <a target="_blank" href={linkGithub}>
+            <GitHubIcon />
+          </a>
         </div>
       </div>
     </div>

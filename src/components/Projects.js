@@ -45,6 +45,8 @@ function Projects() {
                 name={project.name}
                 description={project.description}
                 technologies={project.technologies}
+                linkSite={project.linkSite}
+                linkGithub={project.linkGithub}
               />
             );
           })}
@@ -55,6 +57,8 @@ function Projects() {
                 name={project.name}
                 description={project.description}
                 technologies={project.technologies}
+                linkSite={project.linkSite}
+                linkGithub={project.linkGithub}
               />
             );
           })}
@@ -65,6 +69,8 @@ function Projects() {
                 name={project.name}
                 description={project.description}
                 technologies={project.technologies}
+                linkSite={project.linkSite}
+                linkGithub={project.linkGithub}
               />
             );
           })}
